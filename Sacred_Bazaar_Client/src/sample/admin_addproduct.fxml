@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_adminaddproduct">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="97.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="31.0" prefHeight="128.0" prefWidth="533.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="Lucida Sans Demibold" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="845.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="787.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <JFXButton fx:id="submit" layoutX="382.0" layoutY="754.0" onAction="#onsubmitclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Submit" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="quantity" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="348.0" prefHeight="33.0" prefWidth="317.0" promptText="Quantity" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="name" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="219.0" prefHeight="33.0" prefWidth="317.0" promptText="Name" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="mfgdate" defaultColor="#fbffff" layoutX="529.0" layoutY="464.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <Label layoutX="382.0" layoutY="474.0" prefHeight="27.0" prefWidth="135.0" text="Mfg. Date" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" layoutX="578.0" layoutY="754.0" onAction="#onbackclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <ImageView fx:id="image" fitHeight="232.0" fitWidth="249.0" layoutX="774.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="user_email" alignment="CENTER" layoutX="766.0" layoutY="235.0" prefHeight="29.0" prefWidth="293.0" text="Admin" textFill="#da1313">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="category" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="282.0" onAction="#oncategoryclicked" prefHeight="33.0" prefWidth="317.0" promptText="Category" style="-fx-font-size: 18; -fx-text-fill: WHITE; -fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <styleClass>
+            <String fx:value=".jfx-combo-box {-fx-background-color:  WHITE;}" />
+            <String fx:value=".jfx-combo-box .label {-fx-background-color:  WHITE;-fx-text-fill: WHITE;}" />
+         </styleClass>
+      </JFXComboBox>
+      <Label layoutX="382.0" layoutY="546.0" prefHeight="27.0" prefWidth="135.0" text="Exp. Date" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="expdate" defaultColor="#fbffff" layoutX="529.0" layoutY="524.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <JFXTextField fx:id="price" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="413.0" prefHeight="33.0" prefWidth="317.0" promptText="Price" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="status" alignment="CENTER" layoutX="462.0" layoutY="711.0" prefHeight="27.0" prefWidth="135.0" textFill="#d70e0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="349.0" layoutY="152.0" prefHeight="49.0" prefWidth="336.0" text="Add Product" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="offer" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="599.0" onAction="#onofferclicked" prefHeight="33.0" prefWidth="317.0" promptText="Offer" style="-fx-font-size: 18; -fx-text-fill: WHITE; -fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <styleClass>
+            <String fx:value=".jfx-combo-box {-fx-background-color:  WHITE;}" />
+            <String fx:value=".jfx-combo-box .label {-fx-background-color:  WHITE;-fx-text-fill: WHITE;}" />
+         </styleClass>
+      </JFXComboBox>
+      <JFXComboBox fx:id="retailer" focusColor="#6880b2" labelFloat="true" layoutX="382.0" layoutY="695.0" onAction="#onretailerclicked" prefHeight="33.0" prefWidth="317.0" promptText="Retailer" style="-fx-font-size: 18; -fx-text-fill: WHITE; -fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <styleClass>
+            <String fx:value=".jfx-combo-box {-fx-background-color:  WHITE;}" />
+            <String fx:value=".jfx-combo-box .label {-fx-background-color:  WHITE;-fx-text-fill: WHITE;}" />
+         </styleClass>
+      </JFXComboBox>
+      <Label layoutX="382.0" layoutY="658.0" prefHeight="27.0" prefWidth="135.0" text="Offer End Date" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="offerenddate" defaultColor="#fbffff" layoutX="525.0" layoutY="650.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+   </children>
+</AnchorPane>

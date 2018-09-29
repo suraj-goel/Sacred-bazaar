@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Retailer">
+   <children>
+      <JFXButton fx:id="addproduct" layoutX="422.0" layoutY="250.0" onAction="#onaddproductclicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Add Product" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="97.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="31.0" prefHeight="128.0" prefWidth="533.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="Lucida Sans Demibold" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="845.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="787.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <JFXButton fx:id="editproduct" layoutX="422.0" layoutY="312.0" onAction="#oneditproductclicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Edit Product" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="logout" layoutX="480.0" layoutY="707.0" onAction="#onlogoutclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="removeproduct" layoutX="421.0" layoutY="377.0" onAction="#onremoveproductclicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Remove Product" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="381.0" layoutY="171.0" prefHeight="49.0" prefWidth="336.0" text="Retailer" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addoffer" layoutX="421.0" layoutY="438.0" onAction="#onaddofferclicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Add Offer" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="analyzer" layoutX="421.0" layoutY="502.0" onAction="#onanalyzerclicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Analyzer 1" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="analyzer2" layoutX="421.0" layoutY="565.0" onAction="#onanalyzer2clicked" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: white;" text="Analyzer 2" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

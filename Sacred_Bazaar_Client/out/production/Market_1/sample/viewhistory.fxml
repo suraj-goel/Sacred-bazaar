@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_viewhistory">
+   <children>
+      <JFXButton layoutX="491.0" layoutY="599.0" prefHeight="33.0" prefWidth="106.0" text="Log In" />
+      <Label layoutX="276.0" layoutY="2.0" prefHeight="83.0" prefWidth="512.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="Lucida Sans Demibold" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="933.0" layoutY="796.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <JFXListView fx:id="products" layoutX="25.0" layoutY="224.0" onMouseClicked="#handleclickedproducts" prefHeight="549.0" prefWidth="268.0" style="-fx-font-size: 30; -fx-font-weight: bold; -fx-font-color: #da1313; -fx-text-inner-color: #da1313; -fx-prompt-text-fill: #da1313;" />
+      <Label alignment="CENTER" layoutX="25.0" layoutY="175.0" prefHeight="49.0" prefWidth="268.0" text="Products" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="902.0" layoutY="114.0" prefHeight="33.0" prefWidth="163.0" textFill="#da1313">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" layoutX="462.0" layoutY="740.0" onAction="#onbackclicked" prefHeight="33.0" prefWidth="157.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="159.0" layoutY="14.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="841.0" layoutY="14.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="user_email" alignment="CENTER" layoutX="1072.0" layoutY="41.0" prefHeight="29.0" prefWidth="223.0" textFill="#33bfc6">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="product_description" layoutX="342.0" layoutY="224.0" prefHeight="424.0" prefWidth="417.0" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextArea>
+      <Label fx:id="status" alignment="CENTER" layoutX="473.0" layoutY="690.0" prefHeight="27.0" prefWidth="135.0" textFill="#d70e0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="364.0" layoutY="98.0" prefHeight="49.0" prefWidth="336.0" text="View History" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="775.0" layoutY="193.0" prefHeight="49.0" prefWidth="268.0" text="Date:" textFill="#bf2525">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="796.0" layoutY="304.0" prefHeight="27.0" prefWidth="106.0" text="Start Date" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="startdate" defaultColor="#fbffff" layoutX="933.0" layoutY="282.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <Label alignment="CENTER" layoutX="796.0" layoutY="371.0" prefHeight="27.0" prefWidth="106.0" text="End Date" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="enddate" defaultColor="#fbffff" layoutX="933.0" layoutY="349.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <JFXButton fx:id="search" layoutX="855.0" layoutY="482.0" onAction="#onsearchclicked" prefHeight="33.0" prefWidth="157.0" style="-fx-background-color: white;" text="Search" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label fx:id="status2" alignment="CENTER" layoutX="866.0" layoutY="423.0" prefHeight="27.0" prefWidth="135.0" textFill="#d70e0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalamount" layoutX="341.0" layoutY="666.0" prefHeight="49.0" prefWidth="417.0" text="Total Amount:" textFill="#dad2d2">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Retailer_Signup">
+   <children>
+      <JFXTextField fx:id="shopname" focusColor="#6880b2" labelFloat="true" layoutX="420.0" layoutY="400.0" prefHeight="33.0" prefWidth="317.0" promptText="Shop Name" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="back" layoutX="484.0" layoutY="641.0" onAction="#onbackclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="491.0" layoutY="599.0" prefHeight="33.0" prefWidth="106.0" text="Log In" />
+      <JFXButton fx:id="submit" layoutX="484.0" layoutY="592.0" onAction="#onsubmitclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Submit" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="95.0" fitWidth="106.0" layoutX="187.0" layoutY="25.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="319.0" layoutY="25.0" prefHeight="95.0" prefWidth="443.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="790.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <Label fx:id="checklabel" alignment="CENTER" layoutX="437.0" layoutY="540.0" prefHeight="26.0" prefWidth="208.0" textFill="#c61111">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="95.0" fitWidth="106.0" layoutX="780.0" layoutY="25.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="323.0" layoutY="239.0" prefHeight="95.0" prefWidth="475.0" text="Retailer Signup" textAlignment="CENTER" textFill="#33bfc6">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="361.0" layoutY="412.0">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="361.0" layoutY="473.0">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="address" focusColor="#6880b2" labelFloat="true" layoutX="420.0" layoutY="477.0" onAction="#onaddressclicked" prefHeight="33.0" prefWidth="317.0" promptText="Address" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

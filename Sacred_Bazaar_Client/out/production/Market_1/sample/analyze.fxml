@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_analyzer">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="97.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="31.0" prefHeight="128.0" prefWidth="533.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="Lucida Sans Demibold" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="135.0" layoutX="845.0" layoutY="24.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="787.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <JFXButton fx:id="back" layoutX="886.0" layoutY="660.0" onAction="#onbackclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label fx:id="user_email" alignment="CENTER" layoutX="946.0" layoutY="179.0" prefHeight="29.0" prefWidth="121.0" textFill="#33bfc6">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="450.0" layoutY="485.0" prefHeight="27.0" prefWidth="135.0" textFill="#d70e0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="251.0" layoutY="135.0" prefHeight="49.0" prefWidth="533.0" text="Customers vs Categories" textFill="#bf2525">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="bc" layoutX="75.0" layoutY="214.0" prefHeight="502.0" prefWidth="759.0" title="Analyse">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xaxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yaxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label alignment="CENTER" layoutX="879.0" layoutY="253.0" prefHeight="27.0" prefWidth="135.0" text="Start Date:" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="startdate" defaultColor="#fbffff" layoutX="875.0" layoutY="298.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <Label alignment="CENTER" layoutX="880.0" layoutY="400.0" prefHeight="27.0" prefWidth="135.0" text="End Date:" textFill="#f8f6f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="enddate" defaultColor="#fbffff" layoutX="876.0" layoutY="463.0" prefHeight="44.0" prefWidth="144.0" style="-fx-text-inner-color: WHITE;" />
+      <JFXButton fx:id="update" layoutX="886.0" layoutY="596.0" onAction="#onupdateclicked" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: white;" text="Update" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

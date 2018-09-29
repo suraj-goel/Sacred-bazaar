@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1081.0" stylesheets="@backgroundsmall.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_finalscene">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="87.0" layoutX="158.0" layoutY="22.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="8.0" prefHeight="120.0" prefWidth="535.0" text="Sacred Bazaar" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="Lucida Sans Demibold" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="789.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <ImageView fitHeight="73.0" fitWidth="87.0" layoutX="822.0" layoutY="31.0">
+         <image>
+            <Image url="@sacred-geometry.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backtomarket" layoutX="110.0" layoutY="729.0" onAction="#onbacktomarketclicked" prefHeight="33.0" prefWidth="299.0" style="-fx-background-color: white;" text="Back To Market" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="104.0" prefHeight="53.0" prefWidth="660.0" text="Thank You For Shopping..!!" textAlignment="RIGHT" textFill="#149ad9">
+         <font>
+            <Font name="Lucida Sans Demibold" size="46.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="159.0" prefHeight="43.0" prefWidth="513.0" text="Products will be delivered soon" textAlignment="RIGHT" textFill="#149ad9">
+         <font>
+            <Font name="Lucida Sans Demibold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exit" layoutX="679.0" layoutY="729.0" onAction="#onexitclicked" prefHeight="33.0" prefWidth="299.0" style="-fx-background-color: white;" text="Exit" textFill="#33bfc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="439.0" layoutY="202.0" prefHeight="43.0" prefWidth="166.0" text="Receipt" textAlignment="RIGHT" textFill="#149ad9">
+         <font>
+            <Font name="Lucida Sans Demibold" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="bill_description" layoutX="39.0" layoutY="245.0" prefHeight="465.0" prefWidth="1000.0" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
