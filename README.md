@@ -39,6 +39,8 @@ of months that can be set by the admin.
 ## For more details:
 #### Suraj Goel 
 surajgoel.1225@gmail.com
+#### Shrey Pandey
+shreypandey1509@gmail.com
 
 ## ScreenShots:
 ![screenshot from 2018-09-27 14-54-54](https://user-images.githubusercontent.com/29855009/46244451-9859d880-c3fc-11e8-93af-39eed015017c.png)
