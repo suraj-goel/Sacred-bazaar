@@ -30,4 +30,11 @@ of months that can be set by the admin.
 6. Get any given user’s transaction history over any period of time
 ### Feature to Implement:
 1.Dynamic notifications.
+## Instructions to Run:
+1.import mysql-connector-java-5.1.46.jar from dependency folder in Sacred_Bazaar and Jfoenix.jar from Sacred_Bazaar_Client into the library of IDE.
+2.import Sacred_Bazaar.sql into your mysql workbench.
+3.In the Main.java of Sacred_Bazaar change username and password to that of your Mysql.
+4.The IP of the server in the client side can be set in Main,java of Sacred_Bazaar_Client.
 
+##For more details:
+Suraj Goel surajgoel.1225@gmail.com
