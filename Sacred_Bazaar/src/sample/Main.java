@@ -7,10 +7,10 @@ import java.net.Socket;
 import java.sql.Connection;
 
 public class Main  {
-    static String adminuser="admin";//username of admin login
-    static String adminpass="admin";//password of admin login
-    static String user="root";// user = username of mysql database
-    static String password="root";// pass = password of mysql database
+    static String adminuser=GetPropertiesValues.getAdminUserName();//username of admin login
+    static String adminpass=GetPropertiesValues.getAdminPassword();//password of admin login
+    static String user=GetPropertiesValues.getUserName();// user = username of mysql database
+    static String password=GetPropertiesValues.getMysqlPassword();// pass = password of mysql database
     static String host="jdbc:mysql://localhost:3306/Sacred_Bazaar";// host=localhost address of mysql database
     static Connection connection=MysqlConnection.connect();//connection to mysql server
 
