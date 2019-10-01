@@ -8,9 +8,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
+// Controller For Final Scene
 public class Controller_finalscene {
     @FXML
     JFXButton backtomarket,exit;
