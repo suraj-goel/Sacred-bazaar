@@ -36,6 +36,7 @@ of months that can be set by the admin.
 ##### 3.In the Main.java of Sacred_Bazaar change username and password to that of your Mysql.
 ##### 4.The IP of the server in the client side can be set in Main,java of Sacred_Bazaar_Client.
 
+
 ## For more details:
 #### Suraj Goel 
 surajgoel.1225@gmail.com
